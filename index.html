@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>InfoSec Guru</title>
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="Styling/sample.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="src/ctrl/initialize.js"></script>
+  <script src="src/model/sheetStats.js"></script>
+  <script src="src/view/sheetLogic.js"></script>
+
+  <script>
+   window.addEventListener( "load", sheetProj.view.sheetLogic.setupUserInterface);
+  </script>
+</head>
+
+<style>
+</style>
+<body>
+
+  <!-- <div style="display:flex; align-items:center; justify-content:space-around;; margin-top:3em; margin-bottom:2em;">
+    <img src="../images/clientLogo.png" style="height:250px; width:200px; border-radius:5%; border:4px solid black;">  <div style="width:70%; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lectus arcu, ullamcorper et odio consectetur, pretium tempus urna. Curabitur vestibulum enim sodales finibus pellentesque. Aenean luctus sollicitudin urna, in cursus justo aliquam vitae. Sed sed nunc et diam luctus porttitor. Integer at dui quis ligula auctor eleifend. Integer tincidunt, neque eu scelerisque mollis, tortor metus aliquet tellus, sed pulvinar nibh orci id mi. Quisque sodales magna quis est finibus ultrices. Ut vel sem velit. Phasellus sagittis placerat felis sit amet sagittis. Aenean ex orci, tristique nec vulputate a, ullamcorper et elit. Curabitur porta ex ac lacinia ultrices. In ornare dui non auctor pretium. Maecenas efficitur vitae urna id luctus. Fusce venenatis dapibus libero at finibus.</div>
+  </div> -->
+  <div id="alertBanner"></div>
+  <div  class="container-fluid pt-2" id="shopBanner">
+
+
+  </div>
+  <div id="tabRow">
+      <button id="faqBtn" class="tabButton physicalButton" onclick="snippetFuncs.createFAQ();">FAQ</button>
+      <!-- <button class="tabButton physicalButton" onclick="snippetFuncs.createGallery();">Press Kit</button> -->
+      <button id="homeBtn" class="tabButton physicalButton" onclick="snippetFuncs.createHome();">Home</button>
+      <button id="contactBtn" class="tabButton physicalButton" onclick="snippetFuncs.createContacts();">Contact</button>
+    </div>
+    <hr>
+    <div id="displaySection">
+
+  </div>
+
+  <div id="footerBand"></div>
+</body>

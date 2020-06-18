@@ -1,0 +1,249 @@
+.hoverFlow {
+  overflow: hidden;
+}
+
+.carousel {
+  max-width: 100%;
+  min-width: 200px;
+  height: 500px;
+}
+.carousel .carouselImg {
+  height: 500px;
+  object-fit: contain;
+}
+.carousel .carousel-caption {
+  left: 0;
+  bottom: 0;
+  max-width: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: opacity 1s ease-in;
+}
+.carousel .carousel-caption:hover {
+  opacity: 0;
+}
+
+#carouselExampleIndicators {
+  width: 100%;
+  margin-top: 2em;
+  -webkit-box-shadow: 0px 0px 0px 17px black;
+  -moz-box-shadow: 0px 0px 0px 17px black;
+  box-shadow: 0px 0px 0px 17px black;
+  background-color: black;
+}
+
+.hoverflow:hover {
+  overflow: auto;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+  flex-shrink: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+#alertBanner {
+  height: 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  transition: height 2s;
+}
+
+.activeAlert {
+  height: 5vh !important;
+}
+
+#shopBanner {
+  height: 25vh;
+  background-image: url("../images/youtubeBanner.png");
+  overflow: hidden;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#tabRow {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(180deg, #e8e4db 1%, #010069 3%);
+}
+#tabRow .tabButton {
+  font-family: "Monotype Corsiva";
+  font-size: 2em;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #FFFFF1;
+  flex-grow: 1;
+}
+#tabRow #faqBtn:hover {
+  color: #E3625C;
+  font-weight: bold;
+}
+#tabRow #homeBtn:hover {
+  color: #60DAAE;
+  font-weight: bold;
+}
+#tabRow #contactBtn:hover {
+  color: #327FF6;
+  font-weight: bold;
+}
+
+#footerBand {
+  margin-top: 4em;
+  margin-bottom: 4em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  display: flex;
+  justify-content: center;
+  background-color: #E8E4DB;
+}
+
+#displaySection {
+  background: #010069;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  color: white;
+}
+#displaySection .activeDisplay {
+  width: 80%;
+}
+
+#contactSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5em;
+}
+#contactSection .contactSliceL {
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+  width: 100%;
+}
+#contactSection .contactSliceL .contactRow {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  height: 6em;
+  padding-top: 1em;
+  padding-left: 4em;
+  padding-right: 2em;
+}
+#contactSection .contactSliceL .contactRow img {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+#contactSection .contactSliceR {
+  width: 50%;
+  height: 15rem;
+  padding-top: 2.25em;
+  padding-left: 1.5em;
+}
+
+.linkText:hover {
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+}
+
+.linkImg {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+
+.linkImg:hover {
+  cursor: pointer;
+  border: 0.25em groove gold;
+}
+
+body {
+  background: #010069;
+  font-family: "Verdana";
+}
+body button:hover {
+  cursor: pointer;
+}
+
+#imgSelectContainer {
+  padding: 0;
+  height: 1300px;
+}
+#imgSelectContainer #catalogueName {
+  background-color: #222831;
+  font-family: "Monotype Corsiva";
+  font-size: 2em;
+  text-align: center;
+  color: #d65a31;
+}
+#imgSelectContainer #catalogueTags {
+  height: 15%;
+  background-color: #393e46;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  color: #eeeeee;
+}
+#imgSelectContainer #catalogueTags:hover {
+  overflow-x: auto;
+}
+#imgSelectContainer #catalogueGrid {
+  height: 35%;
+  background-color: #222831;
+  overflow: hidden;
+}
+#imgSelectContainer #catalogueGrid:hover {
+  overflow: auto;
+}
+#imgSelectContainer #catalogueDescription {
+  height: 25%;
+  background-color: #393e46;
+  color: #eeeeee;
+  border: 3px solid black;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+input[type=number] {
+  width: 4em;
+}
+
+textarea {
+  width: 100%;
+  height: 6em;
+}
+
+select {
+  width: 5em;
+}
+
+.fontSelector {
+  width: 8em !important;
+}
+
+/*# sourceMappingURL=sample.css.map */
