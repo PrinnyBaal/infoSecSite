@@ -98,7 +98,7 @@ $bannerDarkBlue:#010069;
 }
 
 #shopBanner{
-  height:25vh;
+  height:calc(100vw / 6.2 - 1px);
   background-image:url($banner);
   overflow:hidden;
 

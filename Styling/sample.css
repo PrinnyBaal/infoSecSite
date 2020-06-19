@@ -70,7 +70,7 @@
 }
 
 #shopBanner {
-  height: 25vh;
+  height: calc(100vw / 6.2 - 1px);
   background-image: url("../images/youtubeBanner.PNG");
   overflow: hidden;
   background-size: contain;
