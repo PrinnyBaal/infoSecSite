@@ -1,12 +1,6 @@
 
 
-// if (localStorage.getItem("savedChars") === null) {
-//   localStorage.setItem('savedChars', JSON.stringify(savedChars));
-// }
-//
-// if (localStorage.getItem("activeChar") === null) {
-//   localStorage.setItem('activeChar', 0);
-// }
+
 
 
 const siteInfo={
@@ -14,6 +8,7 @@ const siteInfo={
   trailerURL:`https://www.youtube.com/embed/ID4_Q3-98Jo`,
 }
 
+//List of facts on the 'Home' tab
 const quickText=[
   "You should know this about our group",
   "And this is also important",
@@ -23,6 +18,7 @@ const quickText=[
 ];
 
 
+// Questions and answers on the 'FAQ' tab
  const faqSnippets=[
    {
      question:"Who are we?",
@@ -48,7 +44,7 @@ const quickText=[
 
 
 
-
+//In the contact tab these will show up on the left
  const contactSnippets=[
    {name:"E-Mail",
     info:"??????@GMail.com"
@@ -56,11 +52,22 @@ const quickText=[
 
  ];
 
+//In the contact tab these will show up on the right.  ADDITIONALLY the image icons will show up in the link bar at the bottom of the page
  const linkSnippets=[
    {
      image:"./images/youtubeLogo.png",
      text:"Subscribe on Youtube",
      link:"https://www.youtube.com/channel/UCw6oav9UsEqc_ny1ab-EZFg"
+   },
+   {
+     image:"https://1000logos.net/wp-content/uploads/2017/03/LinkedIn-Logo.png",
+     text:"Connect on LinkedIn",
+     link:"https://www.linkedin.com/"
+   },
+   {
+     image:"https://cdn3.iconfinder.com/data/icons/basicolor-reading-writing/24/077_twitter-512.png",
+     text:"Follow us on Twitter",
+     link:"https://www.twitter.com/"
    },
 
 
@@ -68,38 +75,7 @@ const quickText=[
 
  ];
 
- // const gameDescription="Member the Alamo? is a VR shooter loosely based on the historic battle that birthed Texas. You will fight alongside larger than life heroes as you defend the Alamo from Santa Anna and his Mexican army that outnumber you 100 to 1.";
- // const quickFacts=["<b>Projected Release Date:</b> Coming Soon <br><br>",
- //                  "<b>Developer:</b> Blue Collar Games <br><br>",
- //                  "<b>Platforms:</b> VR <br><br>",
- //                  "<b>Rating:</b> M (17+) <br><br>",
- //                  "<b>Trailer:</b> https://www.youtube.com/watch?v=3RJ-3AAo4nM <br><br>",
- //                  "<b>Press E-Mail:</b> BlueCollarGamesForever@GMail.com <br><br>"];
- //
- //
- // const gallerySnippets=[
- //
- //   {image:"../images/screenshotMech.png",
- //    title:"The opposing Forces",
- //    blurb:"Challenges you face may not exactly line up to what you remember in history class"},
- //    {image:"../images/titleHeader.png",
- //     title:"Game Logo",
- //     blurb:"The logo used in most of our publications"},
- //   {image:"../images/screenshotCast.png",
- //    title:"Larger Than Life",
- //    blurb:"Follow and guide the stories of a colorful cast of heroes"},
- //
- //    {image:"../images/clientLogo.png",
- //    title:"Blue Collar Games' Logo",
- //    blurb:""},
- //    {image:"../images/screenshotBattle.png",
- //     title:"Varied In-Game Action",
- //     blurb:"Make the most of VR with fun gunslinging action"},
- //
- //
- // ];
-
-
+//A helper object that con tains various functions I use throughout projects, you shouldn't need to change anything below here
  let ci={
    jumpTo:function(anchor){
      window.location.href = "#"+anchor;

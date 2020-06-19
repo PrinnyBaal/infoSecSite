@@ -61,7 +61,7 @@
   text-align: center;
   background-color: black;
   opacity: 0.8;
-  color: white;
+  color: black;
   transition: height 2s;
 }
 
@@ -71,9 +71,10 @@
 
 #shopBanner {
   height: 25vh;
-  background-image: url("../images/youtubeBanner.PNG");
+  background-image: url("../images/youtubeBanner.png");
   overflow: hidden;
-  background-size: 100% 100%;
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -82,10 +83,10 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background: linear-gradient(180deg, #e8e4db 1%, #010069 3%);
+  background-color: #E8E4DB;
 }
 #tabRow .tabButton {
-  font-family: "Monotype Corsiva";
+  font-family: "Verdana";
   font-size: 2em;
   background-color: Transparent;
   background-repeat: no-repeat;
@@ -93,7 +94,7 @@
   cursor: pointer;
   overflow: hidden;
   outline: none;
-  color: #FFFFF1;
+  color: black;
   flex-grow: 1;
 }
 #tabRow #faqBtn:hover {
@@ -116,15 +117,15 @@
   padding-bottom: 0.5em;
   display: flex;
   justify-content: center;
-  background-color: #E8E4DB;
+  background-color: #e1dcd0;
 }
 
 #displaySection {
-  background: #010069;
+  background-color: #E8E4DB;
   justify-content: center;
   display: flex;
   width: 100%;
-  color: white;
+  color: black;
 }
 #displaySection .activeDisplay {
   width: 80%;
@@ -166,7 +167,7 @@
 
 .linkText:hover {
   cursor: pointer;
-  color: white;
+  color: black;
   text-decoration: underline;
 }
 
@@ -183,7 +184,7 @@
 }
 
 body {
-  background: #010069;
+  background: #E8E4DB;
   font-family: "Verdana";
 }
 body button:hover {
@@ -196,7 +197,7 @@ body button:hover {
 }
 #imgSelectContainer #catalogueName {
   background-color: #222831;
-  font-family: "Monotype Corsiva";
+  font-family: "Verdana";
   font-size: 2em;
   text-align: center;
   color: #d65a31;
@@ -223,7 +224,7 @@ body button:hover {
 #imgSelectContainer #catalogueDescription {
   height: 25%;
   background-color: #393e46;
-  color: #eeeeee;
+  color: black;
   border: 3px solid black;
   border-radius: 5px;
   overflow: auto;

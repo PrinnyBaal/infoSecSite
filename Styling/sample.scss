@@ -11,8 +11,7 @@ $darkHorse:#090F1D;
 $goldenMoment:#D1BB68;
 $championSteel:#8B8E85;
 
-$storeFont:"Monotype Corsiva";
-$talkFont:"Lucida Handwriting";
+
 $baseFont:"Verdana";
 
 $deleteIcon:"https://res.cloudinary.com/metaverse/image/upload/v1548289539/icons8-delete-48.png";
@@ -90,7 +89,7 @@ $bannerDarkBlue:#010069;
   text-align:center;
   background-color:black;
   opacity:.8;
-  color:white;
+  color:black;
   transition: height 2s;
 }
 
@@ -103,7 +102,8 @@ $bannerDarkBlue:#010069;
   background-image:url($banner);
   overflow:hidden;
 
-  background-size:100%  100%;
+  background-size:contain;
+  background-position:center;
   background-repeat:no-repeat;
 
   position:relative;
@@ -117,14 +117,15 @@ $bannerDarkBlue:#010069;
   // min-height:50px;
   display:flex;
   flex-wrap:wrap;
-  background: linear-gradient(180deg, rgba(232,228,219,1) 1%, rgba(1,0,105,1) 3%);
+  background-color:$bannerBeige;
+  // background: linear-gradient(180deg, rgba(232,228,219,1) 1%, rgba(1,0,105,1) 3%);
   //border:2px solid black;
   // position:absolute;
   // bottom:0;
 
 
   .tabButton{
-    font-family:$storeFont;
+    font-family:$baseFont;
     font-size:2em;
     // background-color:$valiantBlue;
     // border:none;
@@ -134,7 +135,7 @@ $bannerDarkBlue:#010069;
     cursor:pointer;
     overflow: hidden;
     outline:none;
-    color:$radiantWhite;
+    color:black;
     flex-grow:1;
   }
 
@@ -165,16 +166,16 @@ padding-top: .5em;
 padding-bottom: .5em;
 display: flex;
 justify-content: center;
-background-color: $bannerBeige;
+background-color: #e1dcd0;
 }
 
 #displaySection{
-  background: rgb(1,0,105,1);
-
+  //background: rgb(1,0,105,1);
+  background-color:$bannerBeige;
   justify-content:center;
   display:flex;
   width:100%;
-  color:white;
+  color:black;
 
   .activeDisplay{
     //TODO media query to scale width to max on small screens
@@ -191,12 +192,11 @@ background-color: $bannerBeige;
     display:flex; flex-direction:column;
     height:25rem;
     width:100%;
-    //background-color:pink;
+
     .contactRow{
       display:flex; flex-grow:1;
       width:100%; height:6em;
-      //border-bottom:1px solid black;
-       //align-items:center;
+
        padding-top:1em;
       padding-left:4em; padding-right:2em;
       img{
@@ -212,14 +212,13 @@ background-color: $bannerBeige;
     padding-top:2.25em; padding-left:1.5em;
 
 
-    //background-color:teal;
   }
 }
 
 
 .linkText:hover{
   cursor:pointer;
-  color:white;
+  color:black;
   //font-weight: bold;
   text-decoration: underline;
 }
@@ -243,17 +242,11 @@ background-color: $bannerBeige;
   border:.25em groove gold;
 }
 
-// #footer{
-//   background-color:brown;
-//   position:relative;
-//   bottom:0;
-//   left:0;
-//   width:100%;
-// }
+
 
 body{
   //background-image:url("https://res.cloudinary.com/metaverse/image/upload/v1533578530/Backgrounds/ep_naturalblack.png");
-  background: $bannerDarkBlue;
+  background: $bannerBeige;
   // background: linear-gradient(180deg, rgba(232,228,219,1) 5%, rgba(1,0,105,1) 70%);
   font-family:$baseFont;
   button:hover{
@@ -262,26 +255,16 @@ body{
 }
 
 
-// #workSpace{
-//   max-width:1500px;
-//   min-height:700px;
-// }
+
 
 #imgSelectContainer{
   padding:0;
   height:1300px;
 
   #catalogueName{
-    // max-height:10%;
-    // line-height:2em;
 
-    // font-size:1.5em;
-    // overflow:hidden;
-    // font-family:$storeFont;
-    // color:$flairColor;
-    // text-align:center;
     background-color:$darkBack;
-    font-family:$storeFont;
+    font-family:$baseFont;
     font-size:2em;
     text-align:center;
     color:$flairColor;
@@ -310,7 +293,7 @@ body{
   #catalogueDescription{
     height:25%;
     background-color:$greyBack;
-    color:$lightBack;
+    color:black;
     border:3px solid black;
     border-radius:5px;
     overflow:auto;
@@ -332,153 +315,3 @@ select{
 .fontSelector{
   width:8em !important;
 }
-
-
-
-// .formGroupTitle{
-//   font-family:$storeFont;
-//   font-size:2em;
-//   text-align:center;
-//   color:$flairColor;
-// }
-//
-// #formWorkspace{
-//   width:700px;
-//   height:100%;
-//   overflow:hidden;
-//   background-color:#393e46;
-//
-//   .formContainer{
-//     background-color:$darkBack;
-//     border:5px groove #000000;
-//     .formStyle{
-//       background-color:$greyBack;
-//       color:$lightBack;
-//       border:2px inset $lightBack;
-//       border-radius:5%;
-//     }
-//     .addFormButton{
-//       width:100%;
-//     }
-//
-//   }
-//
-//   .catalogueAddForm{
-//     color:$lightBack;
-//   }
-//
-//
-// }
-//
-// #formWorkspace:hover{
-//   overflow:auto;
-// }
-//
-// #cardContainer{
-//   width:400px;
-//   background-color:$darkBack;
-//   box-shadow: 1px 1px 5px #555 inset;
-// }
-
-
-
-
-
-
-//
-// .badge{
-//   line-height:1.1;
-//   padding: .20em .2em;
-//   border:2px solid black;
-//   background-color:$lightBack;
-//   color:black;
-//
-// }
-// .badge:hover{
-//   cursor:pointer;
-//   border-color:white;
-//   color:white;
-// }
-
-// .hidden{
-//   display:none;
-// }
-//
-// .closableDiv{
-//   position:relative;
-//
-// }
-//
-// .closeButton{
-//   opacity:0;
-//   position:absolute;
-//   top:10px;
-//   right:10px;
-//   height:25px;
-//   width:25px;
-//   background-color:grey;
-//   background-image:url("https://res.cloudinary.com/metaverse/image/upload/v1548289539/icons8-delete-48.png");
-//   background-size:contain;
-//   background-repeat:no-repeat;
-//   border:1px solid black;
-//   transition:opacity .5s;
-//   z-index:5;
-//
-// }
-//
-// .closableDiv:hover{
-//   .closeButton{
-//     opacity:1;
-//   }
-// }
-// .closeButton:hover{
-//   cursor:pointer;
-// }
-//
-// .filterToggle{
-//   cursor: pointer;
-//   user-select: none;
-//   -webkit-user-select: none;
-//   -webkit-touch-callout: none;
-//   height:0;
-//   top: 50%;
-//
-//   input {
-//     position: absolute;
-//     opacity: 0;
-//     width: 0;
-//     height: 0;
-//   }
-//   label{
-//     background-color:grey;
-//     border-radius:5%;
-//     -webkit-box-shadow: 0px 5px 8px 3px rgba(0,0,0,0.75);
-//     -moz-box-shadow: 0px 5px 8px 3px rgba(0,0,0,0.75);
-//     box-shadow: 0px 5px 8px 3px rgba(0,0,0,0.75);
-//     cursor: pointer;
-//   }
-//   input:checked+label{
-//     background-color:$flairColor;
-//     outline-style: groove;
-//     outline-color: white;
-//     outline-width:2px;
-//     -webkit-box-shadow: none;
-//     -moz-box-shadow: none;
-//     box-shadow: none;
-//   }
-// }
-//
-// .gridTile{
-//   border:2px solid black;
-//   width:10%;
-//   height:100%;
-//   background-size:100% 100%;
-//   background-color:$greyBack;
-//   &.activeTile{
-//     border:2px groove white;
-//   }
-// }
-//
-// .gridTile:hover{
-//   cursor:pointer;
-// }

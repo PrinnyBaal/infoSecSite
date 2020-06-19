@@ -110,7 +110,7 @@ let snippetFuncs={
     contactHTML=`
     <div id="contactDisplay">
 
-      <h2 style="text-align:center; color:white; text-decoration:underline; padding-top:2em;">Contact Links & Socials:</h2>
+      <h2 style="text-align:center;  text-decoration:underline; padding-top:2em;">Contact Links & Socials:</h2>
       <div id="contactSection" >
         <div class="contactSliceR">
           ${indirectLinks}
